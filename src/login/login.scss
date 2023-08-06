@@ -10,8 +10,9 @@
     .card {
         display: flex;
         width: 50%;
-        min-height: 60%;
+        height: 70%;
         background-color: #EEFAFB;
+        overflow:hidden;
 
         border-radius: 1rem;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -21,7 +22,6 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            border-radius: 1rem;
             padding: 50px;
             gap: 1rem;
             align-items: center;
@@ -48,7 +48,7 @@
                 color: #223759;
             }
             button{
-                width: 100%;
+                width: 400px;
                 height: 3rem;
                 border-radius: 0.5rem;
                 border: none;
@@ -69,6 +69,7 @@
             padding: 50px;
             gap: 50px;
             align-items: center;
+            justify-content: center;
 
             background-color: #223759;
             color: #D6F4FF;
@@ -87,6 +88,7 @@
 
                 input {
                     width: 100%;
+                    background: none;
 
                     border-radius: 0.5rem;
                     border: none;
@@ -96,7 +98,8 @@
                     margin-bottom: 1rem;
 
                     font-size: 1rem;
-                    font-weight: 400;
+                    font-weight: bold;
+                    color: #D6F4FF;
                 }
 
                 button{
