@@ -21,7 +21,7 @@ const Register = () => {
                <h1>CLOWDER</h1>
                 <span>Already have an account?</span>
                 <Link to="/login">
-                <button>Login!</button>
+                <button>Login</button>
                 </Link>
 
                </div>
