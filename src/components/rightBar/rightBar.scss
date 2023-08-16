@@ -1,3 +1,110 @@
-.rightbar {
-    flex: 3;
+@import "../../style.scss";
+
+.rightBar {
+    @include themify($themes) {
+        flex: 2;
+        height: calc(100vh - 6rem);   
+        overflow: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        };
+
+        /* From https://css.glass */
+        background: themed("backgroundColor");
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.4px);
+        -webkit-backdrop-filter: blur(9.4px);
+        border: 1px solid themed("backgroundBorderColour");
+        color: themed("textColor");
+
+        position: sticky;
+        top: 6rem;
+
+        font-family: 'Chilanka';
+
+        .container {
+            padding: 2rem;
+
+            .item{
+
+                -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+                -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+                box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+
+                padding: 1.5rem;
+                margin-bottom: 1rem;
+
+                span {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color: themed("textColor"); 
+                }
+
+                .user {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 2rem 0;
+                    position: relative;
+    
+            
+                    .userInfo {
+            
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        margin-bottom: 1rem;
+            
+            
+                        img {
+                            width: 2rem;
+                            height: 2rem;
+                            border-radius: 50%;
+                            object-fit: cover;
+            
+                        }
+                        .online {
+                            width: 0.75rem;
+                            height: 0.75rem;
+                            border-radius: 50%;
+                            background-color: #068806;
+                            position: absolute;
+                            top: 0;
+                            left: 1.5rem;
+
+                        }
+            
+                        span{
+            
+                            font-size: 1rem;
+                            font-weight: 500;
+                            color: themed("textColor");
+                        }
+                    }
+
+                    .buttons {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+
+                        button {
+                            border: none;
+                            padding: 0.5rem;
+                            color: themed("textColor");
+                            cursor: pointer;
+
+                            &:first-child {
+                                background-color: themed("buttonOne");
+                            }
+
+                            &:last-child{
+                                background-color: themed("buttonTwo");
+                            }
+
+                        }
+                    }
+                }
+            }
+        }     
+    }
 }

@@ -1,90 +1,109 @@
+@import "../../style.scss";
+
 .leftBar {
-    flex: 1;
-    width: 10%;
-    height: 100vh;
-    background-color: #223759;
-    color: #D6F4FF;
-    border-right: 1px solid #D6F4FF;
+    @include themify($themes) {
+        flex: 1;
+        height: calc(100vh - 6rem);
+        overflow: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        };
+
+        /* From https://css.glass */
+        background: themed("backgroundColor");
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.4px);
+        -webkit-backdrop-filter: blur(9.4px);
+        border: themed ("backgroundBorderColour");
+        color: themed("textColor");
+        color: #D6F4FF;
+
+        position: sticky;
+        top: 6rem;
+
+        font-family: 'Chilanka';
 
 
-    .container {
-        padding: 2rem;
+        .container {
+            padding: 2rem;
 
-        hr {
-            margin: 0.5rem 0;
-            border: none;
-            height: 0.05rem;
-            background-color: #D6F4FF;
-        }
- 
+            hr {
+                margin: 0.5rem 0;
+                border: none;
+                height: 0.05rem;
 
-        .menu{
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            
-            .user{
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-                margin-bottom: 1rem;
-
-
-                img {
-                    width: 2rem;
-                    height: 2rem;
-                    border-radius: 50%;
-                    object-fit: cover;
-
-                }
-
-                span{
-
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                    color: #D6F4FF;
-                }
-
+                background-color: themed("textColor");
             }
+    
 
-            .menuList{
-      
-                align-items: center;
+            .menu{
+                display: flex;
+                flex-direction: column;
                 gap: 1rem;
-                margin-bottom: 2rem;
-
-                .menuListItem{
+                
+                .user{
                     display: flex;
                     align-items: center;
                     gap: 1rem;
                     margin-bottom: 1rem;
 
-                    .Icon{
 
-                        color: #D6F4FF;                       
-                        
+                    img {
+                        width: 2rem;
+                        height: 2rem;
+                        border-radius: 50%;
+                        object-fit: cover;
+
                     }
-                    .Text{
-                        color: #D6F4FF;     
-                        font-size: 1rem;                        
+
+                    span{
+
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        color: themed("textColor");
+                    }
+
+                }
+
+                .menuList{
+        
+                    align-items: center;
+                    gap: 1rem;
+                    margin-bottom: 2rem;
+
+                    .menuListItem{
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        margin-bottom: 1rem;
+
+                        .Icon{
+
+                            color: themed("textColor");                       
+                            
+                        }
+                        .Text{
+                            color: themed("textColor");     
+                            font-size: 1rem;                        
+                        }
                     }
                 }
+
+                .menuTitle {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 1rem;
+                    justify-content: center;
+
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: themed("textColor");
+
+
+                }
+
+                
             }
-
-            .menuTitle {
-                display: flex;
-                align-items: center;
-                margin-top: 1rem;
-                justify-content: center;
-
-                font-size: 1.5rem;
-                font-weight: bold;
-                color: #D6F4FF;
-
-
-            }
-
-            
         }
     }
 }

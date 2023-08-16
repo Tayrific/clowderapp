@@ -1,0 +1,12 @@
+@import "../../style.scss";
+
+.home {
+    @include themify($themes) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightgrey;
+
+        font-family: 'Chilanka';
+    }
+}

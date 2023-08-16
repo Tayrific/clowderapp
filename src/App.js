@@ -7,6 +7,7 @@ import Profile from './pages/profile/Profile';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import WebFont from 'webfontloader';
+import './style.scss';
 
 import {
   createBrowserRouter,
@@ -14,15 +15,19 @@ import {
   Outlet,
   RouterProvider,
 } from "react-router-dom";
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
+import { DarkModeContext } from './context/darkModeContext';
 
 function App() {
 
   const currentUser = true;
 
+  const {darkMode} = useContext(DarkModeContext);
+
+
   const Layout = () => {
     return (
-      <div >
+      <div className={`theme-${darkMode ? "dark": "light"}`} >
         <Navbar />
         <div style={{ display: "flex" }}>
           <LeftBar />
@@ -77,7 +82,7 @@ const ProtectedRoute = ({children}) => {
   useEffect(() => {
     WebFont.load({
       google: {
-        families: ['Droid Sans', 'Chilanka', 'Cherry Bomb One']
+        families: ['Droid Sans', 'Chilanka', 'Cherry Bomb One', 'Caveat']
       }
     });
    }, []);
