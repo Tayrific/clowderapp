@@ -6,17 +6,21 @@ import NewspaperTwoToneIcon from '@mui/icons-material/NewspaperTwoTone';
 import SportsEsportsTwoToneIcon from '@mui/icons-material/SportsEsportsTwoTone';
 import ChatBubbleTwoToneIcon from '@mui/icons-material/ChatBubbleTwoTone';
 import SettingsTwoToneIcon from '@mui/icons-material/SettingsTwoTone';
+import { AuthContext } from "../../context/authContext";
+import { useContext } from "react";
 
 
 const LeftBar = () => {
+    const { currentUser } = useContext(AuthContext);
+
     return (
         <div className="leftBar">
 
             <div className="container">
                 <div className="menu">
                     <div className="user">
-                        <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=1xw:0.84415xh;center,top" alt="" className="profilePic"/>
-                        <span> Tay </span>
+                        <img src={currentUser.profilePic} alt="" className="profilePic"/>
+                        <span> {currentUser.name} </span>
                     </div>
                     <div className="menuList">
                         <span className="menuListItem">

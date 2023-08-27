@@ -3,20 +3,15 @@
 .leftBar {
     @include themify($themes) {
         flex: 1;
-        height: calc(100vh - 6rem);
+        height: calc(100vh - 7rem);
         overflow: scroll;
         &::-webkit-scrollbar {
             display: none;
         };
 
-        /* From https://css.glass */
         background: themed("backgroundColor");
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(9.4px);
-        -webkit-backdrop-filter: blur(9.4px);
-        border: themed ("backgroundBorderColour");
         color: themed("textColor");
-        color: #D6F4FF;
+
 
         position: sticky;
         top: 6rem;

@@ -3,33 +3,33 @@
 .rightBar {
     @include themify($themes) {
         flex: 2;
-        height: calc(100vh - 6rem);   
+        height: calc(100vh - 7rem);
         overflow: scroll;
         &::-webkit-scrollbar {
             display: none;
         };
 
-        /* From https://css.glass */
+
         background: themed("backgroundColor");
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(9.4px);
-        -webkit-backdrop-filter: blur(9.4px);
-        border: 1px solid themed("backgroundBorderColour");
         color: themed("textColor");
 
         position: sticky;
         top: 6rem;
 
+
         font-family: 'Chilanka';
 
         .container {
-            padding: 2rem;
+            padding: 1.5rem;
+            
 
             .item{
+                background: themed("backgroundColor");
+                -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.89);
+                -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.89);
+                box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.5);
+                border-radius: 1.5rem;
 
-                -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
-                -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
-                box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
 
                 padding: 1.5rem;
                 margin-bottom: 1rem;
