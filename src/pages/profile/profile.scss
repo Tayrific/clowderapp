@@ -28,6 +28,7 @@
                 position: relative;
                 border-radius: 2rem;
 
+
             }
 
             .profileImg{
@@ -48,6 +49,10 @@
         .profileContainer{
             padding: 1rem 3rem;
 
+            @include mobile {
+                padding: 0.5rem;
+            }
+
 
             .profileInfo{
                 background: themed("backgroundColor");
@@ -60,6 +65,13 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 1rem 2rem;
+
+                @include mobile {
+                    flex-direction: column;
+                    height: 30vh;
+                    padding: 20px;
+                    margin-top: 55px;
+                }
 
 
 

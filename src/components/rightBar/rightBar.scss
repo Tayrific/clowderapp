@@ -19,6 +19,10 @@
 
         font-family: 'Chilanka';
 
+        @include mobile {
+            display: none;
+        }
+
         .container {
             padding: 1.5rem;
             

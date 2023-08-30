@@ -13,5 +13,10 @@
         color: themed("textColor");
         font-family: 'Chilanka';
 
+        @include mobile {
+            padding: 10px;
+        }
+
     }
+    
 }

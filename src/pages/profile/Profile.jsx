@@ -2,16 +2,9 @@ import "./profile.scss"
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import  MoreVertIcon from '@mui/icons-material/MoreVertRounded';
-import { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../../context/authContext";
-import { useParams } from "react-router";
-import { Link } from "react-router-dom";
-
-
-
+import Posts from "../../components/posts/Posts";
 
 const Profile = () => {
     return (
@@ -44,10 +37,9 @@ const Profile = () => {
                             <MoreVertIcon className="icon" fontSize="large"/>
                         </div>
 
-                    </div>     
+                    </div>  
+                    <Posts/>   
             </div>
-
-
         </div>
     );
 }

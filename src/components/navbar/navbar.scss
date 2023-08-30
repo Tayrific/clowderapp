@@ -2,10 +2,13 @@
 
 .navbar{
     @include themify($themes) {
+
+
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 1rem 2rem;
+
         height: 4rem;
 
         border-bottom: 1px solid lightgrey;
@@ -22,6 +25,12 @@
 
         font-family: 'Chilanka';
         z-index: 1;
+
+        @include mobile {
+            width: 84%;    
+            position: sticky;      
+        } 
+
 
 
         .left{
@@ -52,7 +61,12 @@
                 .searchIcon {
                     color: themed("textColor");
                     padding-left: 1rem;
+
                 }
+
+                @include mobile {
+                    width: 55px;
+                } 
         
 
                 input{
@@ -67,9 +81,12 @@
 
                     font-size: 1rem;
                     font-weight: bold;
-
     
                     cursor: pointer;
+
+                    @include mobile {
+                        display: none;
+                    } 
                 }
 
                 input:focus{
@@ -87,11 +104,16 @@
 
 
 
+
             .user{
                 display: flex;
                 align-items: center;
                 gap: 0.5rem;
                 font-weight: 500;
+                @include mobile {
+                    display: none;
+                } 
+    
 
                 img{
                     width: 2rem;
