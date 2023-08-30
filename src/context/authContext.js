@@ -8,15 +8,12 @@ export const AuthContextProvider = ({ children }) => {
   );
 
   const login = () => {
-    setCurrentUser(
-        {
+    setCurrentUser({
             id: 1,
             name: "Tayy",
             email: "",
             profilePic: "https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=1xw:0.84415xh;center,top",
-
-        }
-    );
+        });
   };
 
   useEffect(() => {

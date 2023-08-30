@@ -7,16 +7,16 @@ const Posts = () => {
 
         {
             id: "1",
-            name: "Luffy",
+            name: "RandomGuy",
             userId: "1",
             profilePic: "https://i.scdn.co/image/ab67616d0000b273698053276e5f2b236dd2de91",
-            desc: "Love for all, Hatred for none.",
+            desc: "Fati is gay.",
             photo: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhcnRzfGVufDB8fDB8fHww&w=1000&q=80",
             date: "5 mins ago",
         },
         {
         id: "2",
-        name: "Nami",
+        name: "Fati",
         userId: "2",
         profilePic: "https://staticg.sportskeeda.com/editor/2023/03/474e0-16794903651247-1920.jpg?w=840",
         desc: "xx.",

@@ -2,26 +2,26 @@ $themes: (
     light:(
 
         textColor: #000,
-        backgroundColor: rgba(255, 255, 255, 0.7),
-        primaryColor: #6e7c97,
-        secondaryColor: #89A5D2,
+        transBackgroundColor: rgba(255, 255, 255, 0.7),
+        backgroundColour: rgb(255, 255, 255),
         logoColor: #223759,
         backgroundBorderColour: rgba(255, 255, 255, 0.3),
         buttonOne: #92c59a,
         buttonTwo: #89bbd2,
+        textInput: #a39f9f,
         buttonDismiss: #d28989,
 
         ),
 
     dark:(
-        textColor: #D6F4FF,
-        backgroundColor: rgba(34, 55, 89, 0.9),
-        primaryColor: #6e7c97,
-        secondaryColor: #89A5D2,
-        logoColor: #fff,
+        textColor: #a6b8c7,
+        transBackgroundColor: rgba(0, 13, 24, 0.9),
+        backgroundColour: #272d33,
+        logoColor: #a6b8c7,
         backgroundBorderColour: rgba(34, 55, 89, 0.3),
-        buttonOne: #6e7c97,
-        buttonTwo: #89A5D2,
+        buttonOne: #141c24,
+        buttonTwo: #00060b,
+        textInput: #111416,
 
     )
 );

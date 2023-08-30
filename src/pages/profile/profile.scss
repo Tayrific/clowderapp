@@ -1,0 +1,127 @@
+@import "../../style.scss";
+
+.profile {
+
+    @include themify($themes) {
+        border-left: 1px solid #fffefe81;
+        border-right: 1px solid #fffefe81;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        background: themed("transBackgroundColor");
+
+        color: themed("textColor");
+        font-family: 'Chilanka';
+
+
+        .images {
+            width: 100%;
+            height: 15rem;
+            object-fit: cover;
+            position: relative;
+
+            .profileCover {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: relative;
+                border-radius: 2rem;
+
+            }
+
+            .profileImg{
+                width: 10rem;
+                height: 10rem;
+                position: absolute;
+                border-radius: 50%;
+                border: 0.2rem solid themed("backgroundColour");
+
+                margin-top: -5rem;
+                top : 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                object-fit: cover;
+            }
+        }
+
+        .profileContainer{
+            padding: 1rem 3rem;
+
+
+            .profileInfo{
+                background: themed("backgroundColor");
+                -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.89);
+                -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.89);
+                box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.5);
+                border-radius: 1.5rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 2rem;
+
+
+
+                .left{
+                    flex:1;
+                    display: flex;
+                    gap: 1rem;
+
+                    .icon {
+                        color: themed("textColor");
+                    }
+                }
+
+                .center{
+                    flex:1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                   
+
+                    
+                    .profileName {
+                        padding-top: 2rem;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        color: themed("textColor");
+                        
+                    }
+
+                    button {
+                        width: 50%;
+                        height: 3rem;
+                        border-radius: 1rem;
+                        border: none;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        margin-bottom: 1rem;
+                        background-color: themed("buttonTwo");
+                        color: themed("textColor");
+
+                        background: themed("backgroundColor");
+  
+                        cursor: pointer;
+
+                    }
+
+
+
+                }
+
+                .right{
+                    flex:1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 1rem;
+
+
+                }
+
+
+            }
+        }
+    }
+}

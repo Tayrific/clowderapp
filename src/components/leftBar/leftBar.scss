@@ -3,13 +3,13 @@
 .leftBar {
     @include themify($themes) {
         flex: 1;
-        height: calc(100vh - 7rem);
+        height: calc(100vh - 6rem);
         overflow: scroll;
         &::-webkit-scrollbar {
             display: none;
         };
 
-        background: themed("backgroundColor");
+        background: themed("transBackgroundColor");
         color: themed("textColor");
 
 

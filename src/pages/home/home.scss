@@ -2,11 +2,13 @@
 
 .home {
     @include themify($themes) {
+        border-left: 1px solid #fffefe81;
+        border-right: 1px solid #fffefe81;
         display: flex;
         flex-direction: column;
         align-items: center;
         
-        background: themed("backgroundColor");
+        background: themed("transBackgroundColor");
 
         color: themed("textColor");
         font-family: 'Chilanka';

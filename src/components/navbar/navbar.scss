@@ -13,7 +13,7 @@
         top: 0;
 
         /* From https://css.glass */
-        background: themed("backgroundColor");
+        background: themed("transBackgroundColor");
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(9.4px);
         -webkit-backdrop-filter: blur(9.4px);
@@ -28,8 +28,6 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
-
-    
 
             span {
                 font-size: 2rem;

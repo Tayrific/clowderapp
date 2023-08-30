@@ -1,0 +1,116 @@
+@import "../../style.scss";
+
+.comments {
+    @include themify($themes) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: themed("backgroundColor");
+
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            box-shadow: none;
+
+            .title {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            .addComment {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0.2rem;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 10px;
+                }
+
+                .addComment__input {
+                    flex: 5;
+                    height: 50px;
+                    border: none;
+                    outline: none;
+                    border-radius: 1.5rem;
+                    padding: 10px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    background: themed("textInput");
+                }
+
+                button{
+                    width: 100px;
+                    height: 50px;
+                    border: none;
+                    outline: none;
+                    border-radius: 1rem;
+                    padding: 10px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    background: themed("buttonOne");
+                    color: themed("textColor");
+                    cursor: pointer;
+                }
+            }
+
+            
+
+            .comment {
+                display: flex;
+                flex-direction: column;
+                margin: 0.5rem;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 1.5rem;
+                justify-content: space-between;
+    
+    
+            
+    
+                .userInfo {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    margin-bottom: 10px;
+    
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        margin-right: 10px;
+                    }
+    
+                    .comment__author {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+    
+                }
+    
+                .comment__date {
+                    font-size: 12px;
+                    font-weight: 200;
+                }
+    
+                .comment__desc {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+
+        }
+
+
+        
+    }
+}

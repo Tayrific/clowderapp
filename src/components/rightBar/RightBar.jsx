@@ -9,9 +9,9 @@ const RightBar = () => {
 
                     <div className="user">
                         <div className="userInfo">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=1xw:0.84415xh;center,top" alt="" className="profilePic"/>
+                            <img src="https://i.scdn.co/image/ab67616d0000b273698053276e5f2b236dd2de91" alt="" className="profilePic"/>
                             <div className="online" />
-                            <span> Tay </span>
+                            <span> RandomGuy </span>
                         </div>
                         <div className="buttons">
                             <button className="btn">Message</button>
@@ -21,9 +21,9 @@ const RightBar = () => {
 
                     <div className="user">
                         <div className="userInfo">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=1xw:0.84415xh;center,top" alt="" className="profilePic"/>
+                            <img src="https://staticg.sportskeeda.com/editor/2023/03/474e0-16794903651247-1920.jpg?w=840" alt="" className="profilePic"/>
                             <div className="online" />
-                            <span> Tay </span>
+                            <span> Fati </span>
                         </div>
                         <div className="buttons">
                             <button className="btn">Message</button>
@@ -37,8 +37,8 @@ const RightBar = () => {
 
                     <div className="user">
                         <div className="userInfo">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=1xw:0.84415xh;center,top" alt="" className="profilePic"/>
-                            <span> Tay </span>
+                            <img src="https://staticg.sportskeeda.com/editor/2023/03/474e0-16794903651247-1920.jpg?w=840" alt="" className="profilePic"/>
+                            <span> Fati </span>
                         </div>
                         <div className="buttons">
                             <button className="btn">Add Friend</button>
