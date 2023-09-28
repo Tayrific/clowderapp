@@ -23,7 +23,7 @@ const RightBar = () => {
                         <div className="userInfo">
                             <img src="https://staticg.sportskeeda.com/editor/2023/03/474e0-16794903651247-1920.jpg?w=840" alt="" className="profilePic"/>
                             <div className="online" />
-                            <span> Fati </span>
+                            <span> em </span>
                         </div>
                         <div className="buttons">
                             <button className="btn">Message</button>
@@ -38,7 +38,7 @@ const RightBar = () => {
                     <div className="user">
                         <div className="userInfo">
                             <img src="https://staticg.sportskeeda.com/editor/2023/03/474e0-16794903651247-1920.jpg?w=840" alt="" className="profilePic"/>
-                            <span> Fati </span>
+                            <span> em </span>
                         </div>
                         <div className="buttons">
                             <button className="btn">Add Friend</button>

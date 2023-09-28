@@ -12,11 +12,11 @@
         display: flex;
         width: 50%;
         height: 70%;
-        background-color: #EEFAFB;
-        overflow:hidden;
+        background-color: #D6F4FF;
 
         border-radius: 1rem;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
 
 
         .left{
@@ -29,6 +29,10 @@
 
             background-color: #D6F4FF;
             color: #223759;
+
+            transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+
 
             h1{
                 font-size: 2rem;
@@ -66,6 +70,24 @@
             }
 
         }
+
+        .left.slide {
+            left: -100%;
+            opacity: 0;
+          }
+          
+          .left span,
+          .left h1 {
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+          }
+          
+          .left.slide span,
+          .left.slide h1 {
+            opacity: 0;
+          }
+
+
         .right {
             flex: 1;
             display: flex;
@@ -78,6 +100,10 @@
 
             background-color: #223759;
             color: #D6F4FF;
+
+            position: relative;
+            left: 0;
+            transition: left 1s ease-in-out;
 
             
             h1{
@@ -134,5 +160,22 @@
             }
 
         }
+
+        .right.slide {
+            left: -60%; /* Slide the right side to the left */
+          }
+
+          .right form {
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out; /* Transition opacity for the form content */
+          }
+          
+          .right.slide form  {
+            opacity: 0; /* Fade out the form content when sliding */
+          }
+
+ 
+
+          
     }
 }

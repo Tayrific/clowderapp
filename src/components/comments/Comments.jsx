@@ -16,7 +16,7 @@ export const Comments = () => {
 
         {
             id: "2",
-            name: "Fati",
+            name: "em",
             userId: "2",
             profilePic: "https://staticg.sportskeeda.com/editor/2023/03/474e0-16794903651247-1920.jpg?w=840",
             desc: "wow.",

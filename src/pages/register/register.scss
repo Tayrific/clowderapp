@@ -1,4 +1,5 @@
 .register {
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +13,7 @@
         display: flex;
         width: 50%;
         height: 70%;
-        background-color: #EEFAFB;
+        background-color: #D6F4FF;
         overflow:hidden;
 
         border-radius: 1rem;
@@ -32,12 +33,16 @@
             background-color: #223759;
             color: #D6F4FF;
 
+            position: relative;
+            left: 0;
+            transition: left 1s ease-in-out;
+
             h1{
                 font-size: 2rem;
                 font-weight: 700;
                 margin-bottom: 1rem;
             }
-            form {
+            .regForm {
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
@@ -86,6 +91,20 @@
             }       
 
         }
+
+        .left.slide {
+            left: 60%; /* Slide the right side to the left */
+          }
+
+          .left form {
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out; /* Transition opacity for the form content */
+          }
+          
+          .left.slide form  {
+            opacity: 0; /* Fade out the form content when sliding */
+          }
+
         .right {
             flex: 1;
             display: flex;
@@ -96,6 +115,10 @@
 
             background-color: #D6F4FF;
             color: #223759;
+
+            
+            transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
 
             h1{
                 font-size: 2rem;
@@ -134,5 +157,37 @@
             }
 
         }
+
+        .right.slide {
+            left: -100%;
+            opacity: 0;
+          }
+          
+          .right span,
+          .right h1 {
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+          }
+          
+          .right.slide span,
+          .right.slide h1 {
+            opacity: 0;
+          }
     }
+
+
 }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
